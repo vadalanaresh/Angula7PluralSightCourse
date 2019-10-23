@@ -3,16 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { EventsAppComponent } from './events-app.component';
 import { EventsListComponent } from './events/events-list.component';
-
+import { EventsThumbnail } from './events/events.thumbnail.component'
 @NgModule({
   declarations: [
     EventsAppComponent,
-    EventsListComponent
+    EventsListComponent,
+    EventsThumbnail
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [EventsAppComponent, EventsListComponent]
+  bootstrap: [EventsAppComponent]
 })
 export class EventsAppModule { }
