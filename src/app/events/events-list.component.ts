@@ -1,17 +1,16 @@
-import { Component } from "@angular/core"
+import { Component } from "@angular/core";
+import { navbarComponent } from "../nav/navbar.component";
 
 @Component({
     selector: "events-list",
     template: `<div>
     <h1>Upcoming Angular Events</h1>
     <hr />
+    <nav-bar></nav-bar>
     <events-thumbnail #thumbnail [event] = "eventVariable"></events-thumbnail>
     </div>
-    <h3>{{thumbnail.someProperty}}</h3>
-    <button (click)="thumbnail.logFoo()"> Button </button>
     `
 })
-//template property is one of the way to pass data from child to parent it is simpler than input property
 export class EventsListComponent {
 
     eventVariable = {
